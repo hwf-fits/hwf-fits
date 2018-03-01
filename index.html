@@ -41,8 +41,10 @@
           </div>
           <small id="instructorDescription" class="form-text text-muted">Test users: mfarron, oliviaor, seeleya</small>
         </div>
+        <div class="alert alert-danger" ng-show="lookUpPersonError && instructorInput">{{instructorInput}} does not exist</div>
         <button class="btn btn-primary" ng-click="lookUpPerson(instructorInput)">Lookup {{instructorInput}}</button>
-        <div class="form-group" ng-show="disambiguationNeeded">
+        <!-- this is not needed, we have magic, do not need to disambiguate -->
+        <!-- <div class="form-group" ng-show="disambiguationNeeded">
           <br>
           <label for="termSelect">Instructors disambiguation<small>(only shows when and if needed)</small></label>
           <select name="term" id="termSelect" class="form-control" ng-model="diambiguationList" aria-describedby="disambiguatorDescription">
@@ -53,7 +55,7 @@
           </select>
           <small id="disambiguatorDescription" class="form-text text-muted">Something something abut this select.</small>
           <button type="submit" class="btn btn-primary">Submit</button>
-        </div>
+        </div> -->
       </div>
       <div class="col-md-6">
       </div>
@@ -95,10 +97,10 @@
       </tbody>
 
     </table>
-    <div>
-      <button ng-show="classList" type="button" class="btn btn-primary" ng-click="downloadICS()">
+    <div  ng-show="classList">
+      <button type="button" class="btn btn-primary" ng-click="downloadICS()">
         This is fine, download ICS
-      </button>
+      </button> <small>(for importing into Google calendar)</small>
     </div>
 
     <br>
