@@ -21,7 +21,7 @@
 
 <body ng-app="fitsApp">
   <div class="container" ng-controller="fitsController">
-    <h1>FITS (Faculty Isomething Tsomething Scheduler)</h1>
+    <h1>FITS <small>(Faculty Istructional Teaching  Schedulers)</small></h1>
     <div class="row">
       <div class="col-md-6">
         <div class="form-group">
@@ -77,10 +77,10 @@
         <tr ng-repeat="class in classList">
           <td>
             {{class.Title}}
-            <span ng-show="class.Subtitle">
+            <small ng-show="class.Subtitle">
               <br>
               {{class.Subtitle}}
-            </span>
+            </small>
           </td>
           <td>
             {{class.SectionNumber}}
@@ -101,7 +101,8 @@
       </button>
     </div>
 
-    <div class="panel panel-default" ng-show="downloadICS">
+    <br>
+    <div class="panel panel-default" ng-show="downloadedICS">
       <div class="panel-heading">
         <h3 class="panel-title">Download zone!</h3>
       </div>
