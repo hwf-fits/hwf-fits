@@ -21,28 +21,27 @@
 
 <body ng-app="fitsApp">
   <div class="container" ng-controller="fitsController">
-    <h1>FITS <small>(Faculty Istructional Teaching  Scheduler)</small></h1>
+    <!--- <h1>FITS <small>(Faculty Instructional Teaching  Schedules)</small></h1> -->
+    <img src=img/banner-01.png width="650">
+      <br />
+      <br />
     <div class="row">
       <div class="col-md-6">
-        <div class="form-group">
-          <label for="termSelect" ng-model="termInput">Term</label>
-          <select name="term" id="termSelect" class="form-control">
-            <option value="2170">Winter 2018</option>
-            <option value="2180">Spring 2018</option>
-            <option value="2190">Summer 2018</option>
-            <option value="2200">Spring-Summer 2018</option>
-          </select>
-        </div>
+        
         <div class="form-group">
           <label for="instructor">Instructor</label>
           <div class="input-group">
-            <input type="text" ng-model="instructorInput" class="form-control" id="instructor" aria-describedby="instructorDescription" placeholder="Enter last name">
+            <input type="text" ng-model="instructorInput" class="form-control" id="instructor" aria-describedby="instructorDescription" placeholder="Uniqname">
             <div class="input-group-addon"><i class="glyphicon glyphicon-user"></i></div>
           </div>
-          <small id="instructorDescription" class="form-text text-muted">Test users: mfarron, oliviaor, seeleya</small>
+          <small id="instructorDescription" class="form-text text-muted">Test user: janaya</small>
         </div>
-        <div class="alert alert-danger" ng-show="lookUpPersonError && instructorInput">{{instructorInput}} does not exist</div>
-        <button class="btn btn-primary" ng-click="lookUpPerson(instructorInput)">Lookup {{instructorInput}}</button>
+        <button class="btn btn-primary" data-toggle="collapse" data-target="#demo">Lookup</button>
+		<div id="demo" class="collapse">
+			<br />
+			<a href="https://calendar.google.com/calendar?cid=dW1pY2guZWR1X2VzczBqYXZvOXRwajZiM3MwcmpuYm80NThvQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20" target=_blank>Link to Google Calendar: FITS-janaya</a>
+			<br />
+		</div>
         <!-- this is not needed, we have magic, do not need to disambiguate -->
         <!-- <div class="form-group" ng-show="disambiguationNeeded">
           <br>
