@@ -39,13 +39,12 @@
             <input type="text" ng-model="instructorInput" class="form-control" id="instructor" aria-describedby="instructorDescription" placeholder="Enter last name">
             <div class="input-group-addon"><i class="glyphicon glyphicon-user"></i></div>
           </div>
-          <small id="instructorDescription" class="form-text text-muted">Something something abut this field.</small>
+          <small id="instructorDescription" class="form-text text-muted">Test users: mfarron, oliviaor, seeleya</small>
         </div>
-        <button class="btn btn-primary" ng-click="lookUpPerson()">Lookup {{instructorInput}}</button>
+        <button class="btn btn-primary" ng-click="lookUpPerson(instructorInput)">Lookup {{instructorInput}}</button>
         <div class="form-group" ng-show="disambiguationNeeded">
           <br>
           <label for="termSelect">Instructors disambiguation<small>(only shows when and if needed)</small></label>
-
           <select name="term" id="termSelect" class="form-control" ng-model="diambiguationList" aria-describedby="disambiguatorDescription">
             <option value="BIOL Smith">BIOL Smith</option>
             <option value="ENTOMOL Smith">ENTOMOL Smith</option>
@@ -60,7 +59,49 @@
       </div>
     </div>
     <br><br>
-    <div class="panel panel-default">
+    <table class="table table-hover" ng-show="classList">
+      <thead>
+        <tr>
+          <th scope="col">
+            Title
+          </th>
+          <th scope="col">
+            Section
+          </th>
+          <th scope="col">
+            Meetings
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="class in classList">
+          <td>
+            {{class.Title}}
+            <span ng-show="class.Subtitle">
+              <br>
+              {{class.Subtitle}}
+            </span>
+          </td>
+          <td>
+            {{class.SectionNumber}}
+          </td>
+          <td>
+            <div ng-repeat="meeting in class.Meeting">
+              {{meeting.Days}} {{meeting.Times}}
+            </div>
+          </td>
+        </tr>
+
+      </tbody>
+
+    </table>
+    <div>
+      <button ng-show="classList" type="button" class="btn btn-primary" ng-click="downloadICS()">
+        This is fine, download ICS
+      </button>
+    </div>
+
+    <div class="panel panel-default" ng-show="downloadICS">
       <div class="panel-heading">
         <h3 class="panel-title">Download zone!</h3>
       </div>

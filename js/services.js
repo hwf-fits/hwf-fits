@@ -1,11 +1,7 @@
 fitsApp.factory('getStuff', function ($http, $rootScope, $log) {
   return {
     getGenericStuff: function (url) {
-      return $http.get(url, {
-        headers: {
-        "Authorization": "Bearer " + $rootScope.token
-        }
-      }).then(
+      return $http.get(url).then(
         function success(result) {
           return result;
         },

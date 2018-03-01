@@ -1,0 +1,111 @@
+{
+  "getMyClsScheduleResponse": {
+    "RegisteredClasses": [
+      {
+        "Title": "HBEHED 631",
+        "Subtitle": "Budget Practices",
+        "SectionNumber": "001",
+        "Source": "Canvas",
+        "Link": "https://umich.instructure.com/courses/223507",
+        "Meeting": [
+          {
+            "Days": "Mo",
+            "Times": "2:30PM - 4:30PM"
+          }
+        ],
+        "Instructor": [
+          {
+            "Name": "Milanovich,Amy Friedman",
+            "Role": "Primary Instructor",
+            "Email": "ARFRIED@umich.edu"
+          }
+        ]
+      },
+      {
+        "Title": "HBEHED 641",
+        "Subtitle": "Mat&Meth Health Ed",
+        "SectionNumber": "001",
+        "Source": "Canvas",
+        "Link": "https://umich.instructure.com/courses/199463",
+        "Meeting": [
+          {
+            "Days": "Fr",
+            "Times": "9:00AM - 12:00PM"
+          }
+        ],
+        "Instructor": [
+          {
+            "Name": "Patel,Minal Ravindra",
+            "Role": "Primary Instructor",
+            "Email": "MINALRP@umich.edu"
+          }
+        ]
+      },
+      {
+        "Title": "HBEHED 671",
+        "Subtitle": "Motivatnl Intvw PH",
+        "SectionNumber": "001",
+        "Source": "Canvas",
+        "Link": "https://umich.instructure.com/courses/204518",
+        "Meeting": [
+          {
+            "Days": "Mo",
+            "Times": "10:00AM - 1:00PM"
+          }
+        ],
+        "Instructor": [
+          {
+            "Name": "Resnicow,Kenneth",
+            "Role": "Primary Instructor",
+            "Email": "KRESNIC@umich.edu"
+          }
+        ]
+      },
+      {
+        "Title": "HBEHED 699",
+        "Subtitle": "Career Development",
+        "SectionNumber": "002",
+        "Source": "Canvas",
+        "Link": "https://umich.instructure.com/courses/194615",
+        "Meeting": [
+          {
+            "Days": "We",
+            "Times": "10:00AM - 11:00AM"
+          }
+        ],
+        "Instructor": [
+          {
+            "Name": "Szekeres,Kiran Sylvia",
+            "Role": "Secondary Instructor",
+            "Email": "KIRANSD@umich.edu"
+          },
+          {
+            "Name": "Zikmund-Fisher,Brian J",
+            "Role": "Primary Instructor",
+            "Email": "BZIKMUND@umich.edu"
+          }
+        ]
+      },
+      {
+        "Title": "SW 663",
+        "Subtitle": "Grant,Contr&Fundr",
+        "SectionNumber": "002",
+        "Source": "Canvas",
+        "Link": "https://umich.instructure.com/courses/189610",
+        "Meeting": [
+          {
+            "Days": "Th",
+            "Times": "9:00AM - 12:00PM"
+          }
+        ],
+        "Instructor": [
+          {
+            "Name": "Doyle,Katie",
+            "Role": "Primary Instructor",
+            "Email": "DOYLEKG@umich.edu"
+          }
+        ]
+      }
+    ]
+  }
+}
